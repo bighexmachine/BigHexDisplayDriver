@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:display-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -28,7 +29,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:display-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1138,4 +1138,29 @@ Wire Wire Line
 Wire Wire Line
 	4200 1050 6700 1050
 Connection ~ 6700 2500
+$Comp
+L Screw_Terminal_1x02 J9
+U 1 1 59D74C96
+P 7600 2250
+F 0 "J9" H 7600 2500 50  0000 C TNN
+F 1 "Screw_Terminal_1x02" V 7450 2250 50  0000 C TNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_PT-3.5mm_2pol" H 7600 2025 50  0001 C CNN
+F 3 "" H 7575 2250 50  0001 C CNN
+	1    7600 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 59D74E83
+P 7950 2450
+F 0 "#PWR08" H 7950 2200 50  0001 C CNN
+F 1 "GND" H 7950 2300 50  0000 C CNN
+F 2 "" H 7950 2450 50  0001 C CNN
+F 3 "" H 7950 2450 50  0001 C CNN
+	1    7950 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 2450 7950 2450
+Connection ~ 7700 2450
 $EndSCHEMATC
